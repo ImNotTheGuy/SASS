@@ -17,7 +17,7 @@ SASS is a node dependency, install doing the following: `npm install --save-dev 
 
 Create a file [main.scss](./sass/main.scss).
 
-In the [package.json](package.json) file, add the following line in the `scripts` block: `"compile-sass": "node-sass /sass/main.scss ./css/style.css -w"`
+In the [package.json](package.json) file, add the following line in the `scripts` block: `"compile-sass": "node-sass ./sass/main.scss ./css/style.css -w"`
 
 the `-w` allows to constantly read and compile any updates that occurred.
 
