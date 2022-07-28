@@ -1,3 +1,68 @@
-body{
-    background-color: red;
+$color-blue-violet: blueviolet;
+$color-white: #fff;
+$color-gray: gray;
+
+@mixin basicStyle($width, $height, $bgColor, $borderColor) {
+    
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  position: relative;
+  color: $color-gray;
+  height: 100vh;
+
+  &-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.btn {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all .4s;
+
+  &:link,
+  &:visited {
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    border: 1px solid $color-blue-violet;
+    text-decoration: none;
+    color: $color-blue-violet;
+  }
+
+  &:hover {
+
+
+    background-color: $color-blue-violet;
+    color: $color-white;
+    // transform-style: col;
+    transform: translateY(-0.5rem);
+  }
+
+  &:active{
+    transform: translateY(0);
+    transform: scale(2);
+  }
+
+  &:active:hover{
+    color: inherit;
+    background-color: inherit;
+  }
+
+  
 }
